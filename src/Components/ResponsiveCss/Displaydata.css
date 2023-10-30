@@ -1,0 +1,58 @@
+@media (max-width:767px){
+    .main-container{
+        width: 100vw;
+    }
+    .top-bar{
+        width: 100%;
+        font-size: 20px;
+        /* margin-left: -24px; */
+    }
+    .header-1{
+        width: 100%;
+    }
+    .header-2{
+        display: inline;
+    }
+    .image{
+        /* margin-left: 20px; */
+        height: 100px;
+        width: 100px;
+    }
+    .sarah-jefferson{
+        margin-top: 10px;
+    }
+    .image-name{
+        gap: 10px;
+    }
+    .header-3{
+        margin-top: 15px;
+        gap: 3px;
+    }
+    .cross-1{
+        width: 90vw;
+    }
+    .education-part{
+        display: inline;
+        /* width: 100%; */
+    }
+    .about-2{
+        width: 100%;
+    }
+    .employment{
+        width: 100%;
+    }
+    .education-line{
+        width: 100%;
+    }
+    .PROGRAMMING-SKILLS{
+        width: 100%;
+    }
+    .progress_1,.progress_2,.progress_3,.progress_4,.progress_5,.progress_6{
+        width: 100%;
+    }
+    .para-1{
+        width: 100vw;
+        margin-left: -7px;
+        text-align: justify;
+    }
+}

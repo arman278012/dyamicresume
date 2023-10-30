@@ -1,0 +1,12 @@
+@media(max-width:767px){
+    .main-container{
+        width: 100vw;
+    }
+    .range-slider-group-1{
+        display: inline;
+       
+    }
+    .range-slider-group-1 .slider-1{
+        margin: 10px 0 20px 0;
+    }
+}

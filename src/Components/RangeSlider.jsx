@@ -1,5 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { AppContext } from './AuthContextPro';
+import './ResponsiveCss/Lastpage.css'
+
+
+
 const RangeSlider = () => {
 
 
@@ -78,10 +82,10 @@ const RangeSlider = () => {
     }
 
     return (
-        <div className="slider-parent flex justify-center items-center flex-col gap-10">
+        <div className="slider-parent flex justify-center items-center flex-col gap-10 main-container">
             <p className='font-bold text-[30px] text-blue-700'>Rate yourself in the following Languages!</p>
-            <div className='flex gap-10 '>
-                <div className='border-2 border-gray-400 p-5'>
+            <div className='flex gap-10 range-slider-group-1'>
+                <div className='border-2 border-gray-400 p-5 slider-1'>
                     <p>Wordpress</p>
                     <input type="range" min="0" max="100" value={value1}
                         onChange={({ target: { value: radius1 } }) => {
@@ -107,8 +111,8 @@ const RangeSlider = () => {
                 </div>
             </div>
 
-            <div className='flex gap-10'>
-                <div className='border-2 border-gray-400 p-5'>
+            <div className='flex gap-10 range-slider-group-1'>
+                <div className='border-2 border-gray-400 p-5 slider-1'>
                     <p>HTML</p>
                     <input type="range" min="0" max="100" value={value3}
                         onChange={({ target: { value: radius3 } }) => {
@@ -133,8 +137,8 @@ const RangeSlider = () => {
                 </div>
             </div>
 
-            <div className='flex gap-10 mb-10'>
-                <div className='border-2 border-gray-400 p-5'>
+            <div className='flex gap-10 mb-10 range-slider-group-1'>
+                <div className='border-2 border-gray-400 p-5 slider-1'>
                     <p>MySql</p>
                     <input type="range" min="0" max="100" value={value5}
                         onChange={({ target: { value: radius5 } }) => {

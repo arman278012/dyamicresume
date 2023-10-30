@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { AppContext } from './AuthContextPro'
+import '../Components/ResponsiveCss/userdetails.css'
 
 const UserDetails = () => {
 
@@ -19,26 +20,26 @@ const UserDetails = () => {
     // }
     setPageNumber(1)
 
-    console.log(UserDetails)
+    // console.log(UserDetails)
 
 
 
     return (
-        <div className='w-[70vw] mx-auto'>
+        <div className='w-[70vw] mx-auto user-main'>
             <div className='text-center'>
-                <p className='font-bold text-[30px] text-blue-700'>Fill the Details to make your free Resume</p>
+                <p className='font-bold text-[30px] text-blue-700 details-text'>Fill the Details to make your free Resume</p>
             </div>
 
-            <div className='w-[70vw] h-[1px] mx-auto bg-black mt-5'></div>
+            <div className='w-[70vw] h-[1px] mx-auto bg-black mt-5 cross-1'></div>
 
-            <div className='w-[55vw] mx-auto'>
+            <div className='w-[55vw] mx-auto user-1'>
                 <div className='main-div mt-10 flex justify-between '>
                     <div className='name flex flex-col gap-2'>
                         <p className='font-bold text-lg'>Name</p>
-                        <div className='flex gap-2'>
+                        <div className='flex gap-2 two-names'>
                             <div className="firstname">
                                 <input type="text"
-                                    className='border-[1px] rounded-md h-[40px] w-[220px] border-gray-400 bg-transparent'
+                                    className='firstname-input border-[1px] firstbox rounded-md h-[40px] w-[220px] border-gray-400 bg-transparent'
                                     name='firstname'
                                     value={UserDetails.firstname}
                                     onChange={handleChange}
@@ -47,7 +48,7 @@ const UserDetails = () => {
                             </div>
                             <div className="lastname">
                                 <input type="text"
-                                    className='border-[1px] rounded-md h-[40px] w-[220px] border-gray-400 bg-transparent'
+                                    className='lastname-input border-[1px] rounded-md h-[40px] w-[220px] border-gray-400 bg-transparent'
                                     name='lastname'
                                     value={UserDetails.lastname}
                                     onChange={handleChange}

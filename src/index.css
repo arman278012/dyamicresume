@@ -24,8 +24,6 @@ code {
   box-shadow: 0 0 10px #aaa;
 }
 
-
-
 .progress_1 .bar_1 {
   width: var(--progress);
   height: 100%;
@@ -282,181 +280,58 @@ code {
   }
 }
 
-/*For responsiveness in Mobile phone*/
-@media (max-width: 767px) {
-  * {
-    padding: 10px;
+.progress_6 {
+  --progress: 0%;
+  margin-top: 10px;
+  width: 16vw;
+  height: 40px;
+  /* margin: 9em auto; */
+  border: 1px solid #fff;
+  padding: 12px 10px;
+  box-shadow: 0 0 10px #aaa;
+}
+
+.progress_6 .bar_6 {
+  width: var(--progress);
+  height: 100%;
+  background: linear-gradient(rgb(212, 173, 66), rgb(216, 206, 110), rgb(255, 247, 0));
+  background-repeat: repeat;
+  box-shadow: 0 0 10px 0px red;
+  animation:
+    shine 4s ease-in infinite,
+    end 1s ease-out 1 7s;
+  transition: width 3s ease 3s;
+}
+
+@property --progress-2 {
+  syntax: "<length>";
+  initial-value: 0%;
+  inherits: true;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0 0;
   }
 
-  .top-bar {
-    width: 100%;
-  }
-
-  .header-1 {
-    width: 100%;
-  }
-
-  .header-2 {
-    display: block;
-    /* margin-top: 20px; */
-  }
-
-  .header-3 {
-    margin-top: 15px;
-  }
-
-  .sarah-jefferson {
-    font-size: 20px;
-  }
-
-  .image {
-    width: 100px;
-  }
-
-  .para-1 {
-    width: 100%;
-    /* margin-bottom: 10px; */
-  }
-
-  .para-1 p {
-    font-size: 13px;
-  }
-
-  .about-1 {
-    width: 100%;
-    display: block;
-  }
-
-  .about-2 {
-    width: 100%;
-  }
-
-  .employment {
-    width: 100%;
-  }
-
-  .employment-1 {
-    width: 100%;
-    display: block;
-  }
-
-  .variation {
-    font-size: 15px;
-  }
-
-  .employment-1 .year-1 {
-    font-size: 15px;
-    margin-left: 40px;
-  }
-
-  .employe .line {
-    width: 100%;
-  }
-
-  .var-para {
-    font-size: 13px;
-  }
-
-  .cooper-union {
-    display: block;
-  }
-
-  .cooper-name {
-    font-size: 15px;
-  }
-
-  .cooper-year {
-    font-size: 15px;
-    margin-left: 40px;
-  }
-
-  .cooper-para {
-    font-size: 13px;
-  }
-
-  .education-part {
-    width: 100%;
-    display: block;
-  }
-
-  .education-line {
-    width: 100%;
-  }
-
-  .lorem-contrary {
-    display: block;
-  }
-
-  .lorem-contrary .lorem-para {
-    font-size: 15px;
-  }
-
-  .lorem-contrary .lorem-year {
-    font-size: 15px;
-    margin-left: 40px;
-  }
-
-  .web-para {
-    font-size: 13px;
-  }
-
-  .lorem-line-1 {
-    width: 100%;
-  }
-
-  .Graphic-Design .gr-d {
-    display: block;
-  }
-
-  .Graphic-Design .gr-para {
-    font-size: 15px;
-  }
-
-  .Graphic-Design .gr-year {
-    font-size: 15px;
-    margin-left: 40px;
-  }
-
-  .Graphic-Design .graphic-para {
-    font-size: 13px;
-  }
-
-  .Graphic-Design .gr-line {
-    width: 100%;
-  }
-
-  .pr-skills {
-    width: 100%;
-    margin-left: 0;
-    /* justify-content: center; */
-  }
-
-  .pr-skills .pr-heading {
-    font-size: 15px;
-  }
-
-  .pr-skills .progress_1,
-  .progress_2,
-  .progress_3,
-  .progress_4,
-  .progress_5 {
-    width: 100%;
-  }
-
-  .last {
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  .last .last-gr {
-    font-size: 15px;
-  }
-
-  .lang {
-    margin-top: 20px;
-  }
-
-  .lang-sk {
-    font-size: 15px;
+  100% {
+    background-position: 0 50px;
   }
 }
+
+@keyframes end {
+
+  0%,
+  100% {
+    box-shadow: 0 0 10px 0px rgb(250, 226, 106);
+  }
+
+  50% {
+    box-shadow: 0 0 15px 5px rgb(208, 178, 28);
+  }
+}
+
+
+
+
+/*For responsiveness in Mobile phone*/

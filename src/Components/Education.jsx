@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { AppContext } from './AuthContextPro'
+import '../Components/ResponsiveCss/Education.css'
 
 const Education = () => {
 
@@ -25,23 +26,23 @@ const Education = () => {
 
 
     return (
-        <div className='w-[70vw] mx-auto'>
-            <div className='text-center'>
-                <p className='font-bold text-[30px] text-blue-700'>Fill the Educational Details here</p>
+        <div className='w-[70vw] mx-auto main-container'>
+            <div className='text-center '>
+                <p className='font-bold text-[30px] text-blue-700 main-text'>Fill the Educational Details here</p>
             </div>
 
             <div className='w-[70vw] h-[1px] mx-auto bg-black mt-5'></div>
 
-            <div className='w-[55vw] mx-auto'>
-                <div className='border-[1px] border-gray-400 mt-5 p-5'>
+            <div className='w-[55vw] mx-auto Web-Details'>
+                <div className='border-[1px] border-gray-400 mt-5 p-5 Web-Details-2'>
                     <div><p className='font-bold text-center text-red-700'>Web Details</p></div>
                     <div className='main-div mt-10 flex justify-between '>
                         <div className='name flex flex-col gap-2'>
                             <p className='font-bold text-lg'>Name</p>
-                            <div className='flex gap-2'>
+                            <div className='two-names flex gap-2'>
                                 <div className="firstname">
                                     <input type="text"
-                                        className='border-[1px] rounded-md h-[40px] w-[220px] border-gray-400 bg-transparent'
+                                        className='border-[1px] firstbox-name rounded-md h-[40px] w-[220px] border-gray-400 bg-transparent'
                                         name='web_firstname'
                                         value={educationDetails.web_firstname}
                                         onChange={handleChange}
@@ -50,7 +51,7 @@ const Education = () => {
                                 </div>
                                 <div className="firstname">
                                     <input type="text"
-                                        className='border-[1px] rounded-md h-[40px] w-[220px] border-gray-400 bg-transparent'
+                                        className='border-[1px] lastbox-name rounded-md h-[40px] w-[220px] border-gray-400 bg-transparent'
                                         name='web_lastname'
                                         value={educationDetails.web_lastname}
                                         onChange={handleChange}
@@ -65,7 +66,7 @@ const Education = () => {
                             <p className='font-bold text-lg'>Designation</p>
                             <div className="firstname">
                                 <input type="text"
-                                    className='border-[1px] rounded-md h-[40px] w-[320px] border-gray-400 bg-transparent'
+                                    className='border-[1px] Designation-box rounded-md h-[40px] w-[320px] border-gray-400 bg-transparent'
                                     name='web_designation'
                                     value={educationDetails.web_designation}
                                     onChange={handleChange}
@@ -82,7 +83,7 @@ const Education = () => {
                                 <p className='font-bold text-lg'>Year</p>
                                 <div className="firstname">
                                     <input type="text"
-                                        className='border-[1px] rounded-md h-[40px] w-[320px] border-gray-400 bg-transparent'
+                                        className='border-[1px] Year-box rounded-md h-[40px] w-[320px] border-gray-400 bg-transparent'
                                         name='web_year'
                                         value={educationDetails.web_year}
                                         onChange={handleChange}
@@ -95,7 +96,7 @@ const Education = () => {
                                 <p className='font-bold text-lg'>Discription</p>
                                 <div className="firstname">
                                     <input type="text"
-                                        className='border-[1px] rounded-md h-[40px] w-[320px] border-gray-400 bg-transparent'
+                                        className='border-[1px] Discription-box rounded-md h-[40px] w-[320px] border-gray-400 bg-transparent'
                                         name='web_description'
                                         value={educationDetails.web_description}
                                         onChange={handleChange}
@@ -112,10 +113,10 @@ const Education = () => {
                     <div className='main-div mt-10 flex justify-between '>
                         <div className='name flex flex-col gap-2'>
                             <p className='font-bold text-lg'>Name</p>
-                            <div className='flex gap-2'>
+                            <div className='flex gap-2 two-names'>
                                 <div className="firstname">
                                     <input type="text"
-                                        className='border-[1px] rounded-md h-[40px] w-[220px] border-gray-400 bg-transparent'
+                                        className='border-[1px] firstbox-name rounded-md h-[40px] w-[220px] border-gray-400 bg-transparent'
                                         name='graphic_firstname'
                                         value={educationDetails.graphic_firstname}
                                         onChange={handleChange}
@@ -124,7 +125,7 @@ const Education = () => {
                                 </div>
                                 <div className="firstname">
                                     <input type="text"
-                                        className='border-[1px] rounded-md h-[40px] w-[220px] border-gray-400 bg-transparent'
+                                        className='border-[1px] lastbox-name rounded-md h-[40px] w-[220px] border-gray-400 bg-transparent'
                                         name='graphic_lastname'
                                         value={educationDetails.graphic_lastname}
                                         onChange={handleChange}
@@ -139,7 +140,7 @@ const Education = () => {
                             <p className='font-bold text-lg'>Designation</p>
                             <div className="firstname">
                                 <input type="text"
-                                    className='border-[1px] rounded-md h-[40px] w-[320px] border-gray-400 bg-transparent'
+                                    className='border-[1px] Designation-box rounded-md h-[40px] w-[320px] border-gray-400 bg-transparent'
                                     name='graphic_designation'
                                     value={educationDetails.graphic_designation}
                                     onChange={handleChange}
@@ -156,7 +157,7 @@ const Education = () => {
                                 <p className='font-bold text-lg'>Year</p>
                                 <div className="firstname">
                                     <input type="text"
-                                        className='border-[1px] rounded-md h-[40px] w-[320px] border-gray-400 bg-transparent'
+                                        className='border-[1px] Year-box rounded-md h-[40px] w-[320px] border-gray-400 bg-transparent'
                                         name='graphic_year'
                                         value={educationDetails.graphic_year}
                                         onChange={handleChange}
@@ -169,7 +170,7 @@ const Education = () => {
                                 <p className='font-bold text-lg'>Discription</p>
                                 <div className="firstname">
                                     <input type="text"
-                                        className='border-[1px] rounded-md h-[40px] w-[320px] border-gray-400 bg-transparent'
+                                        className='border-[1px] Discription-box rounded-md h-[40px] w-[320px] border-gray-400 bg-transparent'
                                         name='graphic_description'
                                         value={educationDetails.graphic_description}
                                         onChange={handleChange}

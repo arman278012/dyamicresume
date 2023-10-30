@@ -1,0 +1,30 @@
+@media(max-width:767px){
+    .main-container{
+        width: 100%;
+    }
+    .main-container p{
+        font-size: 15px;
+    }
+    .main-container .main-div{
+        justify-content: baseline;
+    }
+    .main-text{
+        font-size: 15px;
+    }
+    .Web-Details{
+        width: 90vw;
+    }
+    .Web-Details-2{
+        /* padding: 10px; */
+    }
+    .main-container .name{
+        width: 100%;
+    }
+    .two-names{
+        display: block;
+    }
+    .firstbox-name,.lastbox-name,.Discription-box,.Year-box,.Designation-box{
+        width: 265px;
+    }
+    
+}

@@ -4,6 +4,7 @@ import { FaAngleDown } from 'react-icons/fa'
 import { BiLogoFacebook, BiSolidChevronRight } from 'react-icons/bi'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { BsGoogle, BsPinterest, BsTwitter, BsVimeo } from 'react-icons/bs'
+import './ResponsiveCss/Displaydata.css';
 
 
 const DisplayData = () => {
@@ -47,14 +48,14 @@ const DisplayData = () => {
   useEffect(() => {
     const bar_5 = document.querySelector(".bar_5");
     setTimeout(() => {
-      bar_5.style.setProperty("--progress", (`${range4}%`));
+      bar_5.style.setProperty("--progress", (`${range5}%`));
     }, 500);
   }, [range5])
 
   useEffect(() => {
-    const bar_5 = document.querySelector(".bar_5");
+    const bar_6 = document.querySelector(".bar_6");
     setTimeout(() => {
-      bar_5.style.setProperty("--progress", (`${range4}%`));
+      bar_6.style.setProperty("--progress", (`${range6}%`));
     }, 500);
   }, [range6])
 
@@ -63,7 +64,7 @@ const DisplayData = () => {
   console.log(educationDetails)
   return (
 
-    <div>
+    <div className='main-container'>
       <div className='flex p-5 gap-3 text-2xl mx-auto w-[60vw] justify-end text-gray-400 top-bar'>
         <a href={socailDetails.github} target='_blank'> <AiFillGithub></AiFillGithub></a>
         <a href={socailDetails.facebook} target='_blank'><BiLogoFacebook></BiLogoFacebook></a>
@@ -75,7 +76,7 @@ const DisplayData = () => {
       <div className='bg-white w-[60vw] mx-auto  p-5 header-1'>
         <div className=''>
           <div className=' flex  gap-5  justify-between header-2'>
-            <div className='flex gap-5'>
+            <div className='flex gap-5 image-name'>
               <div className='w-[150px] image'>
                 <img src={imagePath} alt="" />
               </div>
@@ -117,9 +118,9 @@ const DisplayData = () => {
             <p className='text-[16px]'>{UserDetails.description}</p>
           </div>
 
-          <div className='w-[50vw] mt-10 h-[1px] bg-gray-400 mx-auto'></div>
+          <div className='w-[50vw] mt-10 h-[1px] bg-gray-400 mx-auto cross-1'></div>
         </div>
-        <div className='flex gap-10 py-5'>
+        <div className='flex gap-10 py-5 education-part'>
           <div className='w-[35vw] mt-10 about-2'>
             <div className='flex'>
               <div className='bg-blue-400 flex justify-center items-center p-2'>
@@ -184,7 +185,7 @@ const DisplayData = () => {
                 </div>
 
                 <div className='flex justify-between lorem-contrary'>
-                  <p className='ml-10 font-bold text-[20px] lorem-para'>{educationDetails.web_firstname} {educationDetails.weblastname}</p>
+                  <p className='ml-10 font-bold text-[20px] lorem-para'>{educationDetails.web_firstname} {educationDetails.web_lastname}</p>
                   <p className='font-bold text-gray-400 text-xl lorem-year'>{educationDetails.web_year}</p>
                 </div>
 
@@ -216,7 +217,7 @@ const DisplayData = () => {
           </div>
 
 
-          <div className='w-[15vw] flex flex-col'>
+          <div className='w-[15vw] flex flex-col PROGRAMMING-SKILLS'>
             <div>
               <p className='font-bold text-xl pr-heading'>PROGRAMMING SKILLS</p>
 
@@ -271,8 +272,8 @@ const DisplayData = () => {
               <div className='mt-5'>
                 <label htmlFor="" className='font-semibold text-gray-400'>ReactJS:{range6}%</label>
               </div>
-              <div class="progress_5">
-                <div class="bar_5"><p className='opacity-0'>{range6}</p>
+              <div class="progress_6">
+                <div class="bar_6"><p className='opacity-0'>{range6}</p>
                 </div>
               </div>
             </div>

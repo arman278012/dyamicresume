@@ -1,0 +1,59 @@
+@media(max-width:767px){
+    .App{
+        width: 100%;
+    }
+    .user-main{
+        width: 100%;
+        padding: 50px;
+    }
+    .user-main p{
+        font-size: 15px;
+    }
+    .details-text{
+        font-size: 15px;
+    }
+    .user-1{
+        width: 100%;
+    }
+    .main-div{
+        display: inline-block;
+        justify-content: baseline;
+    }
+    .name{
+        gap: 5px;
+    }
+    .name p{
+        font-size: 15px;
+    }
+    /* .firstbox{
+        height: 30px;
+        width: 40px;
+    } */
+    .two-names{
+        display: block;
+    }
+    .birthdate{
+        margin-top: 10px;
+        gap: 5px;
+    }
+    .cross-1{
+        margin-top: 15px;
+    }
+    .designation .main-div{
+        margin-top: 10px;
+    }
+    .website-phone .main-div{
+        margin-top: 10px;
+    }
+    .address-image .main-div{
+        margin-top: 10px;
+    }
+    .firstname-input{
+        height: 40px;
+        width: 320px;
+    }
+    .lastname-input{
+        height: 40px;
+        width: 320px;
+    }
+}
