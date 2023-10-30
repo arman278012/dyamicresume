@@ -11,3 +11,452 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*Progress bar -1*/
+.progress_1 {
+  --progress: 0%;
+  margin-top: 10px;
+  width: 16vw;
+  height: 40px;
+  /* margin: 9em auto; */
+  border: 1px solid #fff;
+  padding: 12px 10px;
+  box-shadow: 0 0 10px #aaa;
+}
+
+
+
+.progress_1 .bar_1 {
+  width: var(--progress);
+  height: 100%;
+  background: linear-gradient(rgb(243, 121, 208), rgb(254, 24, 212), rgb(198, 127, 185));
+  background-repeat: repeat;
+  box-shadow: 0 0 10px 0px rgb(112, 198, 211);
+  animation:
+    shine 4s ease-in infinite,
+    end 1s ease-out 1 7s;
+  transition: width 3s ease 3s;
+}
+
+@property --progress-1 {
+  syntax: "<length>";
+  initial-value: 0%;
+  inherits: true;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0 50px;
+  }
+}
+
+@keyframes end {
+
+  0%,
+  100% {
+    box-shadow: 0 0 10px 0px rgb(218, 125, 229);
+  }
+
+  50% {
+    box-shadow: 0 0 15px 5px rgb(227, 112, 225);
+  }
+}
+
+
+/*Progress bar -3*/
+.progress_3 {
+  --progress: 0%;
+  margin-top: 10px;
+  width: 16vw;
+  height: 40px;
+  /* margin: 9em auto; */
+  border: 1px solid #fff;
+  padding: 12px 10px;
+  box-shadow: 0 0 10px #aaa;
+}
+
+
+
+.progress_3 .bar_3 {
+  width: var(--progress);
+  height: 100%;
+  background: linear-gradient(rgb(127, 238, 231), rgb(138, 138, 223), rgb(97, 97, 228));
+  background-repeat: repeat;
+  box-shadow: 0 0 10px 0px rgb(112, 198, 211);
+  animation:
+    shine 4s ease-in infinite,
+    end 1s ease-out 1 7s;
+  transition: width 3s ease 3s;
+}
+
+@property --progress-1 {
+  syntax: "<length>";
+  initial-value: 0%;
+  inherits: true;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0 50px;
+  }
+}
+
+@keyframes end {
+
+  0%,
+  100% {
+    box-shadow: 0 0 10px 0px rgb(122, 122, 235);
+  }
+
+  50% {
+    box-shadow: 0 0 15px 5px rgb(113, 113, 228);
+  }
+}
+
+
+
+/*Progres-2 is here*/
+
+.progress_2 {
+  --progress: 0%;
+  margin-top: 10px;
+  width: 16vw;
+  height: 40px;
+  /* margin: 9em auto; */
+  border: 1px solid #fff;
+  padding: 12px 10px;
+  box-shadow: 0 0 10px #aaa;
+}
+
+.progress_2 .bar_2 {
+  width: var(--progress);
+  height: 100%;
+  background: linear-gradient(green, rgb(148, 232, 148), green);
+  background-repeat: repeat;
+  box-shadow: 0 0 10px 0px green;
+  animation:
+    shine 4s ease-in infinite,
+    end 1s ease-out 1 7s;
+  transition: width 3s ease 3s;
+}
+
+@property --progress-2 {
+  syntax: "<length>";
+  initial-value: 0%;
+  inherits: true;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0 50px;
+  }
+}
+
+@keyframes end {
+
+  0%,
+  100% {
+    box-shadow: 0 0 10px 0px green;
+  }
+
+  50% {
+    box-shadow: 0 0 15px 5px green;
+  }
+}
+
+
+/*progress 4*/
+.progress_4 {
+  --progress: 0%;
+  margin-top: 10px;
+  width: 16vw;
+  height: 40px;
+  /* margin: 9em auto; */
+  border: 1px solid #fff;
+  padding: 12px 10px;
+  box-shadow: 0 0 10px #aaa;
+}
+
+.progress_4 .bar_4 {
+  width: var(--progress);
+  height: 100%;
+  background: linear-gradient(yellow, #c85, gold);
+  background-repeat: repeat;
+  box-shadow: 0 0 10px 0px orange;
+  animation:
+    shine 4s ease-in infinite,
+    end 1s ease-out 1 7s;
+  transition: width 3s ease 3s;
+}
+
+@property --progress-2 {
+  syntax: "<length>";
+  initial-value: 0%;
+  inherits: true;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0 50px;
+  }
+}
+
+@keyframes end {
+
+  0%,
+  100% {
+    box-shadow: 0 0 10px 0px yellow;
+  }
+
+  50% {
+    box-shadow: 0 0 15px 5px yellow;
+  }
+}
+
+
+/*progress 5*/
+.progress_5 {
+  --progress: 0%;
+  margin-top: 10px;
+  width: 16vw;
+  height: 40px;
+  /* margin: 9em auto; */
+  border: 1px solid #fff;
+  padding: 12px 10px;
+  box-shadow: 0 0 10px #aaa;
+}
+
+.progress_5 .bar_5 {
+  width: var(--progress);
+  height: 100%;
+  background: linear-gradient(red, rgb(251, 125, 125), red);
+  background-repeat: repeat;
+  box-shadow: 0 0 10px 0px red;
+  animation:
+    shine 4s ease-in infinite,
+    end 1s ease-out 1 7s;
+  transition: width 3s ease 3s;
+}
+
+@property --progress-2 {
+  syntax: "<length>";
+  initial-value: 0%;
+  inherits: true;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0 50px;
+  }
+}
+
+@keyframes end {
+
+  0%,
+  100% {
+    box-shadow: 0 0 10px 0px red;
+  }
+
+  50% {
+    box-shadow: 0 0 15px 5px red;
+  }
+}
+
+/*For responsiveness in Mobile phone*/
+@media (max-width: 767px) {
+  * {
+    padding: 10px;
+  }
+
+  .top-bar {
+    width: 100%;
+  }
+
+  .header-1 {
+    width: 100%;
+  }
+
+  .header-2 {
+    display: block;
+    /* margin-top: 20px; */
+  }
+
+  .header-3 {
+    margin-top: 15px;
+  }
+
+  .sarah-jefferson {
+    font-size: 20px;
+  }
+
+  .image {
+    width: 100px;
+  }
+
+  .para-1 {
+    width: 100%;
+    /* margin-bottom: 10px; */
+  }
+
+  .para-1 p {
+    font-size: 13px;
+  }
+
+  .about-1 {
+    width: 100%;
+    display: block;
+  }
+
+  .about-2 {
+    width: 100%;
+  }
+
+  .employment {
+    width: 100%;
+  }
+
+  .employment-1 {
+    width: 100%;
+    display: block;
+  }
+
+  .variation {
+    font-size: 15px;
+  }
+
+  .employment-1 .year-1 {
+    font-size: 15px;
+    margin-left: 40px;
+  }
+
+  .employe .line {
+    width: 100%;
+  }
+
+  .var-para {
+    font-size: 13px;
+  }
+
+  .cooper-union {
+    display: block;
+  }
+
+  .cooper-name {
+    font-size: 15px;
+  }
+
+  .cooper-year {
+    font-size: 15px;
+    margin-left: 40px;
+  }
+
+  .cooper-para {
+    font-size: 13px;
+  }
+
+  .education-part {
+    width: 100%;
+    display: block;
+  }
+
+  .education-line {
+    width: 100%;
+  }
+
+  .lorem-contrary {
+    display: block;
+  }
+
+  .lorem-contrary .lorem-para {
+    font-size: 15px;
+  }
+
+  .lorem-contrary .lorem-year {
+    font-size: 15px;
+    margin-left: 40px;
+  }
+
+  .web-para {
+    font-size: 13px;
+  }
+
+  .lorem-line-1 {
+    width: 100%;
+  }
+
+  .Graphic-Design .gr-d {
+    display: block;
+  }
+
+  .Graphic-Design .gr-para {
+    font-size: 15px;
+  }
+
+  .Graphic-Design .gr-year {
+    font-size: 15px;
+    margin-left: 40px;
+  }
+
+  .Graphic-Design .graphic-para {
+    font-size: 13px;
+  }
+
+  .Graphic-Design .gr-line {
+    width: 100%;
+  }
+
+  .pr-skills {
+    width: 100%;
+    margin-left: 0;
+    /* justify-content: center; */
+  }
+
+  .pr-skills .pr-heading {
+    font-size: 15px;
+  }
+
+  .pr-skills .progress_1,
+  .progress_2,
+  .progress_3,
+  .progress_4,
+  .progress_5 {
+    width: 100%;
+  }
+
+  .last {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .last .last-gr {
+    font-size: 15px;
+  }
+
+  .lang {
+    margin-top: 20px;
+  }
+
+  .lang-sk {
+    font-size: 15px;
+  }
+}

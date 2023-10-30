@@ -1,12 +1,27 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.slider-parent{
+  /* position:relative; */
 }
+/* .buble{
+  position:absolute;
+} */
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.App{
+  background-color: #e0e0e0;
+  /* height: 150vh; */
+  margin-bottom: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,4 +50,66 @@
   to {
     transform: rotate(360deg);
   }
+}
+.stepper-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin: 20px; */
+  padding: 20px;
+}
+
+.step-indicators {
+  display: flex;
+}
+
+.step {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.3s ease-in-out;
+}
+
+.step.active {
+  background: #2196f3;
+}
+
+.step.completed {
+  background: #4caf50;
+}
+
+.step-content {
+  margin-top: 20px;
+  /* text-align: center; */
+}
+
+.step-text {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.step-text.fade-in {
+  /* opacity: 1; */
+}
+
+button {
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
